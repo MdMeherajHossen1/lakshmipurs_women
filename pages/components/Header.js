@@ -6,22 +6,22 @@ const Header = () => {
     return (
         <header>
             {/* Top Nav */}
-            <nav className="flex  items-center h-16  bg-white p-1 flex-grow py-2">
+            <nav className="flex  items-center h-16   p-1 flex-grow py-2">
                 <div className="text-blue flex items-center flex-grow sm:flex-grow-0 hover:border border-indigo-600">
                     <Image src={logo} width={140} height={50} objectFit="contain" className="cursor-pointer rounded-lg" alt="logo" />
                 </div>
                 {/* search */}
-                <div className="hidden sm:flex  items-center shadow-2x rounded-md  border cursor-pointer ">
+                <div className="hidden sm:flex  items-center shadow-2x rounded-md flex-grow  border cursor-pointer ">
                     <SearchIcon className="h-6 text-gray-500 px-4" />
-                    <input type="text" placeholder="Search Products" className=" rounded-l-md focus:outline-none pr-28" />
+                    <input type="text" placeholder="Search Products" className=" rounded-l-md focus:outline-none w-full" />
 
-                    <button className="py-3  px-10 h-full rounded-r-md text-white bg-women_primary font-bold">Search</button>
+                    <button className="py-3  px-12 h-full rounded-r-md text-white bg-women_primary font-bold">Search</button>
                 </div>
 
 
 
                 {/* Right */}
-                <div className="flex items-center text-gray-500  text-md space-x-6 mx-2">
+                <div className="flex items-center text-gray-500  text-md space-x-4 mx-2">
 
                     <div className="link flex items-center hover:text-blue-600">
                         <PhoneIcon className="h-16 py-4" />
@@ -46,7 +46,7 @@ const Header = () => {
             {/* search for mobile*/}
             <div className="md:hidden  flex  items-center shadow-2x rounded-md  border cursor-pointer my-1 mx-2">
                 <SearchIcon className="h-6 text-gray-500 px-4" />
-                <input type="text" placeholder="Search Products" className=" rounded-l-md focus:outline-none pr-32" />
+                <input type="text" placeholder="Search Products" className=" rounded-l-md focus:outline-none w-full" />
 
                 <button className="py-3  px-12 h-full rounded-r-md text-white bg-women_primary font-bold">Search</button>
             </div>

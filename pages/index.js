@@ -1,8 +1,8 @@
 import Head from 'next/head'
-import Header from './component/Header'
-import image from '../public/slider2.png'
-import Image from 'next/image'
+import Header from './components/Header'
 
+import Banner from './components/Banner'
+import Category from './components/Category'
 export default function Home() {
   return (
     <div >
@@ -12,8 +12,12 @@ export default function Home() {
         <link rel="icon" href="/LakshmipursWomen.png" />
       </Head>
       <Header />
+      <main className="max-w-screen-2xl mx-auto">
+        <Banner></Banner>
+        <Category></Category>
+      </main>
 
-      <Image src={image} height={600} alt="image" />
+
     </div>
   )
 }
